@@ -12,9 +12,9 @@ CREATE TABLE Dept
 CREATE TABLE Emps
 (
 	Empno NUMBER PRIMARY KEY,
-	Ename VARCHAR2(50),
-	Job   VARCHAR2(50),
-	Salary   FLOAT,
+	Ename VARCHAR2(50) NOT NULL,
+	Job   VARCHAR2(50) NOT NULL,
+	Salary   FLOAT CHECK(Salary>0),
 	Deptno NUMBER,	 
     CONSTRAINT fk_dept FOREIGN KEY (Deptno) REFERENCES Dept(Deptno)
 );
