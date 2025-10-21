@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h2>WELCOME TO ITALIAN PIZZA</h2>
+        <p>We deliver pizza in 40 inutes max. If not - Pizza's on us!</p>
+    </div>
+    <br />
+    <form action="PizzaOrder.php" method="POST">
+        <fieldset>
+            Email
+            <br />
+            <input type="email" id="email" name="email" required />
+            <br />
+            <br />
+
+            Phone
+            <br />
+            <input type="text" id="phone" name="area-code" placeholder="Area" maxlength="3" required />
+            <input type="text" id="phone" name="local-code" placeholder="Local" maxlength="5" required />
+            <input type="text" id="phone"  name="local-code" placeholder="Local" maxlength="5" required />
+            <br />
+            <br />
+
+            Number of slices
+            <br />
+            <input type="number" id="slices" name="pizza-slices" min="2" max="12" />
+            <br />
+            <br />
+
+            Pizza Size
+            <br />
+            <input type="radio" name="size" value="8">8-inch</input>
+            <input type="radio" name="size" value="10">10-inch</input>
+            <input type="radio" name="size" value="12">12-inch</input>
+            <input type="radio" name="size" value="14">14-inch</input>
+            <br />
+            <br />
+
+            Toppings
+            <br />
+            <input type="checkbox" name="pepperoni" value="pepperoni">Pepperoni</input>
+            <input type="checkbox" name="onions" value="onions">onions</input>
+            <input type="checkbox" name="mushrooms" value="mushrooms">Mushrooms</input>
+            <input type="checkbox" name="sausage" value="sausage">Sausage</input>
+            <br />
+            <br />
+
+            <sup style="color:red;">*</sup><input type="checkbox" name="checked" value="checked"><sub>I agree to the TERMS AND CONDITIONS</sub></input>
+        </fieldset>
+        <br />
+        <br />
+
+        <input style="display: block; margin: auto;" type="submit" value="Order Now" />
+    </form>
+</body>
+</html>

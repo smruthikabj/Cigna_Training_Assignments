@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card </title>
+</head>
+<body>
+    <form action="CreditCard.php" method="POST">
+        <fieldset style="display: block; margin: auto;">
+
+            <h3 style="text-align: center;">This is a secure 128-bit SSL Encrpyted payment. You're safe.</h3>
+            <br/>
+
+            <input type="radio" name="payment" value="Credit Card">Credit Card (Visa, Mastercard)</input>
+            <input type="radio" name="payment" value="Pay Pal">Pay Pal</input>
+            <br />
+            <br />
+            Card Number <sub>The 16 digits on front of your card</sub>
+            <br />
+            <input type="text" name="card-number" required />
+            <br />
+            <br />
+            Expiration date
+            <br />
+            <select id="month" name="month">
+                <option selected>Month</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+            
+            <select id="year" name="year">
+                <option selected>Year</option>
+                <option>2025</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+                <option>2029</option>
+                <option>2030</option>
+            </select>
+            <br />
+            <br />
+
+            CVV2/CVC2
+            <br/>
+            <input type="password" id="cvv" name="cvv" maxlength="3" required /><sub>The last 3 digits displayed on the back of your card</sub>
+            <br />
+            <br />
+
+            Full Name on a card
+            <br />
+            <input type="text" id="username" name="username" />
+            <br />
+            <br />
+
+            <p style="text-align: center;">You will be charged $29.00 every month</p>
+        </fieldset>
+        <br />
+        <br />
+
+        <input type="submit" style="display: block; margin: auto;" value="Complete Transaction" />
+    </form>
+</body>
+</html>
