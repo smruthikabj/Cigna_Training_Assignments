@@ -1,0 +1,58 @@
+3(a) Why do we use the value attribute of the <option> tag?
+
+In a <select> dropdown, the <option> tag is used to list choices.
+The value attribute specifies what data will be sent to the server when that option is selected.
+
+
+<select name="country">
+<option value="IN">India</option>
+<option value="US">United States</option>
+<option value="UK">United Kingdom</option>
+</select>
+
+3(b) What is <input type="hidden">? Why do we use it?
+
+<input type="hidden"> is an invisible field in a form.
+It stores information that the user does not see or change, but it is still submitted with the form.
+
+
+<form action="/submit" method="POST">
+<input type="hidden" name="userid" value="12345">
+<input type="text" name="name" placeholder="Enter your name">
+<input type="submit" value="Submit">
+</form>
+
+Use case examples:
+• To store user IDs, session tokens, or product IDs.
+• To send data automatically without showing it on screen.
+
+3(c) What are the table-related tags in HTML?
+
+
+<table> :Defines a table
+<tr> :Defines a row
+<th> :Defines a header cell (bold and centered by default)
+<td> :Defines a standard data cell
+<caption> :Adds a title or description for the table
+<thead> :Groups header rows
+<tbody> :Groups body rows
+<tfoot> :Groups footer rows
+<col> :Defines properties for each column
+<colgroup> :Groups columns for styling
+
+Eg:
+<table border="1">
+<caption>Student Details</caption>
+<thead>
+<tr>
+<th>Name</th>
+<th>Roll No</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pavithra</td>
+<td>101</td>
+</tr>
+</tbody>
+</table>
